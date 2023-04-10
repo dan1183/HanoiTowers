@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfApp5.Keyboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="keyboard" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" KeyDown="Window_KeyDown">
+    <Grid x:Name="main_grid">
+        <Canvas x:Name="canvas_main">
+            <Rectangle Height="8" Margin="28,360,548,0" Stroke="Black" Width="224" Fill="Black"/>
+            <Rectangle Height="268" Margin="135,92,655,0" Stroke="Black" Width="10" Fill="Black"/>
+            <Rectangle Height="8" Margin="270,360,306,0" Stroke="Black" Width="224" Fill="Black"/>
+            <Rectangle Height="268" Margin="377,92,413,0" Stroke="Black" Width="10" Fill="Black"/>
+            <Rectangle Height="8" Margin="514,360,62,0" Stroke="Black" Width="224" Fill="Black"/>
+            <Rectangle Height="268" Margin="621,92,169,0" Stroke="Black" Width="10" Fill="Black"/>
+            <Button x:Name="control" Content="Управление" Height="39" Width="91" HorizontalAlignment="Center" VerticalAlignment="Center" Canvas.Left="355" Canvas.Top="10" Click="Control_Click"/>
+        </Canvas>
+    </Grid>
+</Window>

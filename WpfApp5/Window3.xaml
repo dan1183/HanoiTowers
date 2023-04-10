@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp5.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Window3" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid x:Name="main_grid" UseLayoutRounding="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="115*"></RowDefinition>
+            <RowDefinition Height="176*"></RowDefinition>
+            <RowDefinition Height="128*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="6*"></ColumnDefinition>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ОТЧЁТ" FontSize="72" FontFamily="Century Gothic" HorizontalContentAlignment="Center" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Margin="5,10" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="time" Content="Время:" FontSize="20" FontFamily="Century Gothic" HorizontalContentAlignment="Center" Grid.Row="1" Margin="10,20,10,122" HorizontalAlignment="Center" VerticalAlignment="Center" Width="774" Grid.ColumnSpan="3" Background="{x:Null}" Foreground="White"/>
+        <Label x:Name="count_steps" Content="Количество шагов:" FontSize="20" FontFamily="Century Gothic" HorizontalContentAlignment="Center" Grid.Row="1" Margin="10,72,10,71" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3" Width="774" Foreground="White" Background="{x:Null}"/>
+        <Button x:Name="close_window" Content="Закрыть" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1" Height="60" Width="200" Click="Close_window_Click" Margin="197,39,197,29" FontFamily="Century Gothic">
+            <Button.Effect>
+                <DropShadowEffect BlurRadius="4" Direction="312" ShadowDepth="4" Color="#FFB2B2B2"/>
+            </Button.Effect>
+        </Button>
+        <CheckBox x:Name="check_FullSteps" Content="Показать все шаги" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="128" Height="20" Grid.Column="1" Unchecked="Full_steps_Unchecked" Checked="Full_steps_Checked" Margin="234,122,234,35" Background="White" Foreground="White"/>
+        <CheckBox x:Name="check_top_time" Content="Показать рейтинг по времени" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="194" Height="20" Grid.Column="1" Margin="204,147,198,10" Checked="Check_top_time_Checked" Unchecked="Check_top_time_Unchecked" Foreground="White" Background="White"/>
+        <MediaElement x:Name="mediaelement_fon" Height="421" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="3" Grid.RowSpan="4" Panel.ZIndex="-1" Source="e4a73c86ccae59ea259c75121ba6cb84.gif" Stretch="Fill" MediaEnded="Mediaelement_fon_MediaEnded" UnloadedBehavior="Manual"/>
+    </Grid>
+</Window>

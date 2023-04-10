@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp5.Top_time"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="window_time" Height="450" Width="800" Closing="Window_Closing" Loaded="Window_Loaded" ResizeMode="NoResize" Background="Black" Foreground="{x:Null}">
+    <Grid x:Name="main_grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="57*"></RowDefinition>
+            <RowDefinition Height="131*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Рейтинг по времени" FontSize="72" FontFamily="Century Gothic" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="107" Width="740" Margin="26,10" Grid.ColumnSpan="2" Background="{x:Null}" Foreground="White" />
+        <Label Content="Имя игрока:" FontSize="25" FontFamily="Century Gothic" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="38" Width="170" Margin="26,6,0,0" Background="{x:Null}" Foreground="White"/>
+        <Label Content="Время:" FontSize="25" FontFamily="Century Gothic" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="39" Grid.Column="1" Background="{x:Null}" Foreground="White"/>
+        <TextBox x:Name="name_player" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="320" Height="235" FontSize="22" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" SelectionOpacity="0" Cursor="Arrow" IsTabStop="False" Margin="38,49,38,8"/>
+        <TextBox x:Name="time_player" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="336" Height="237" FontSize="22" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="{x:Null}" Foreground="White" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Stretch" SelectionOpacity="0" Cursor="Arrow" IsTabStop="False" Grid.Column="1" Margin="30,44,30,11"/>
+    </Grid>
+</Window>
