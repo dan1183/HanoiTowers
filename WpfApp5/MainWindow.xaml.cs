@@ -51,7 +51,7 @@ namespace WpfApp5
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("https://informatics.ru/");
+            Process.Start("https://github.com/dan1183/HanoiTowers/blob/master/README.md");
         }
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
